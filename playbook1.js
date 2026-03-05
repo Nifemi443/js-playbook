@@ -270,3 +270,24 @@ const fullNames = companyData.flatMap(dept => {
 }
 );
 console.log(fullNames);
+
+
+// HOF - Higher Order Function 
+
+function operationArray(arr, operation){
+    let result = [];
+    for(let i = 0; i < arr.length; i++){
+        result.push(operation(arr[i]));
+    }
+    return result;
+}
+
+function double(x){
+    return x * 2;
+}
+
+let numbers = [1,2,3,4,5,6];
+
+let multiplied = operationArray(numbers, double);
+
+console.log(multiplied);
