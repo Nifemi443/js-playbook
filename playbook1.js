@@ -308,3 +308,28 @@ const num = [1,2,3,4,5,6].map((element, index, array) => {
     return element * 2;
 })
 
+/* After a hard quarter in the office you decide to get some rest on a vacation. So you will book a flight for you and your girlfriend and try to leave all the mess behind you.
+
+You will need a rental car in order for you to get around in your vacation. The manager of the car rental makes you some good offers.
+
+Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+
+Write a code that gives out the total amount for different days(d). */
+
+function rentalCarCost(d) {
+  const price = 40;
+  const total = price * d
+  const discountSeven = total - 50
+  const discountThree = total - 20
+  if(d >= 7){
+    return discountSeven;
+  }
+  else if (d >= 3 ) {
+    return discountThree;
+  }
+  else {
+    return total;
+  }
+}
+console.log(rentalCarCost(7));
+console.log(rentalCarCost(3));
