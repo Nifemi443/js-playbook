@@ -291,3 +291,10 @@ let numbers = [1,2,3,4,5,6];
 let multiplied = operationArray(numbers, double);
 
 console.log(multiplied);
+
+// BASIC DOM 
+const btn = document.querySelector(".button")
+
+btn.addEventListener("click", () => {
+  btn.textContent = 'Loading';;
+});
