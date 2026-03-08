@@ -298,3 +298,13 @@ const btn = document.querySelector(".button")
 btn.addEventListener("click", () => {
   btn.textContent = 'Loading';;
 });
+
+// map method
+
+const num = [1,2,3,4,5,6].map((element, index, array) => {
+    console.log(`element: ${element}`);
+    console.log(`index: ${index}`);
+    console.log(`array: ${array}`);
+    return element * 2;
+})
+
