@@ -1,7 +1,8 @@
-const tasks = ["Task 1", "Task 2", "Task 3"];
-
-tasks.unshift("URGENT TASK!!!");
-
-console.log(tasks);
-
-
+function makeUser(name, age){
+    return{
+        name:name, 
+        age: age
+    }} 
+    
+    
+let user = makeUser("John", 30); console.log(user.age);

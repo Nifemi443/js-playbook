@@ -298,3 +298,12 @@ const btn = document.querySelector(".button")
 btn.addEventListener("click", () => {
   btn.textContent = 'Loading';;
 });
+// object 
+function makeUser(name, age){
+    return{
+        name:name, 
+        age: age
+    }} 
+    
+    
+let user = makeUser("John", 30); console.log(user.age);
